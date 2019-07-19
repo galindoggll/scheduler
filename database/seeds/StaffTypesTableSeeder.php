@@ -13,12 +13,12 @@ class StaffTypesTableSeeder extends Seeder
     public function run()
     {
         $type1 = new StaffTypes();
-        $type1->name = 'dentist';
+        $type1->type = 'dentist';
         $type1->description = 'A Dentist Staff';
         $type1->save();
 
         $type2 = new StaffTypes();
-        $type2->name = 'receptionist';
+        $type2->type = 'receptionist';
         $type2->description = 'A Receptionist Staff';
         $type2->save();
     }
