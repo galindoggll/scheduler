@@ -23,6 +23,7 @@ class CreateAppointmentsTable extends Migration
             $table->string('remarks');
             $table->bigInteger('status')->unsigned()->index();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

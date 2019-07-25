@@ -12,15 +12,6 @@ class StaffTypes extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'description'
+        'type', 'description'
     ];
-    /**
-     * Role has many users
-     *
-     * @return mixed
-     */
-    public function users()
-    {
-        return $this->belongsToMany(Staffs::class);
-    }
 }

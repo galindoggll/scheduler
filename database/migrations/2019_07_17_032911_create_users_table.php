@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('contact_no')->nullable();
             $table->rememberToken();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
